@@ -1,5 +1,14 @@
+header {
+    position:relative;
+    /* height: 15rem; */
+}
+
 .site-title {
-    position: relative
+    position:absolute;
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    top: 50%;
     text-align: center;
 }
 
