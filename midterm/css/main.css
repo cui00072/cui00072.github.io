@@ -1,13 +1,20 @@
 body {
     background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.overall {
+    background-color: rgb(226, 239, 239);
+    z-index: 1;
+    width: 960px;
+    align-items: center;
+}
 
 header {
     position:relative;
-     max-width: 60rem;
-     background-color:rgb(226, 239, 239);
-     margin: auto;
+    width: 60rem;
+    /* background-color:rgb(226, 239, 239); */
+    margin: auto;
     /* height: 15rem; */
 }
 
@@ -18,19 +25,41 @@ img {
 .site-title {
     position:absolute;
     font-size: 3rem;
+    font-weight: 100;
     color: white;
     width: 100%;
-    top: 50%;
+    top: 40%;
     text-align: center;
 }
 
 ul{
-    padding-left: 0;
+    padding-left: 19rem;
 }
 
 nav ul li {
     display: inline-block;
-    width: ;
+    width: 100px;
     border-right: 1px dotted black;
     text-align: center;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+section {
+    position:relative;
+    /* background-color: rgb(226, 239, 239); */
+    width: 60rem;
+}
+
+.wrapper {
+    position: absolute;
+    width:500px;
+    margin: 0 auto;
+}
+
+.wrapper img {
+    width: 200px;
+    float: left;
 }
