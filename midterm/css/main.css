@@ -4,17 +4,17 @@ body {
 }
 
 .overall {
+    position:absolute;
     background-color: rgb(226, 239, 239);
     z-index: 1;
     width: 960px;
-    align-items: center;
+    
 }
 
 header {
-    position:relative;
-    width: 60rem;
+    /* width: 60rem; */
     /* background-color:rgb(226, 239, 239); */
-    margin: auto;
+    /* margin: auto; */
     /* height: 15rem; */
 }
 
