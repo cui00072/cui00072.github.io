@@ -1,6 +1,18 @@
+body {
+    background-color: #aad4cf;
+}
+
+
 header {
     position:relative;
+     max-width: 60rem;
+     background-color:rgb(226, 239, 239);
+     margin: auto;
     /* height: 15rem; */
+}
+
+img {
+    width: 100%;
 }
 
 .site-title {
@@ -12,9 +24,13 @@ header {
     text-align: center;
 }
 
+ul{
+    padding-left: 0;
+}
+
 nav ul li {
     display: inline-block;
-    width: 100px;
+    width: ;
     border-right: 1px dotted black;
     text-align: center;
 }
