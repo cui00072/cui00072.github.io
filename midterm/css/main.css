@@ -1,17 +1,15 @@
 body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .overall {
-    background-color: rgb(226, 239, 239);
+    background-color: rgb(210, 233, 233);
     z-index: 1;
     width: 1024px;
     margin: 0 auto;
-}
-
-header img {
-    position:relative;
+    /* position:relative; */
 }
 
 .site-title {
@@ -19,19 +17,17 @@ header img {
     font-size: 3rem;
     font-weight: 100;
     color: white;
-    left: 100%;
+    left: 40%;
+    top: 20%
 }
 
 article {
     padding:10px;
 }
-.nav-list{
- 
-}
 
 nav ul li {
     display: inline-block;
-    width: 100px;
+    width: 300px;
     border-right: 1px dotted black;
     text-align: center;
 }
@@ -45,19 +41,17 @@ section {
     width: 60rem;
 }
 
-.wrapper {
-}
-
 .wrapper img {
     width: 200px;
     float: left;
+    padding: 0 10px 10px 0;
 }
 
-.wrapper p {
-    width: 1000px;
-    right: 30px;
+.facts ul{
+    padding:10px 20px;
 }
 
-.facts {
-
+.contact-information {
+    border: 2px solid black;
+    padding: 20px 15px;
 }
