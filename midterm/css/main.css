@@ -9,7 +9,22 @@ body {
     z-index: 1;
     width: 1024px;
     margin: 0 auto;
-    /* position:relative; */
+}
+
+.overall header nav ul {
+    margin: 2px 0;
+}
+
+.overall header nav ul li {
+    font-size: 20px;
+    display: inline-block;
+    width: 300px;
+    border-right: 1.5px solid black;
+    text-align: center;
+}
+
+.overall header nav ul li:last-child {
+    border-right: none;
 }
 
 .site-title {
@@ -25,15 +40,10 @@ article {
     padding:10px;
 }
 
-nav ul li {
-    display: inline-block;
-    width: 300px;
-    border-right: 1px dotted black;
-    text-align: center;
-}
-
-nav ul li:last-child {
-    border-right: none;
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 25px 0 10px 0;
 }
 
 .wrapper img {
@@ -42,8 +52,19 @@ nav ul li:last-child {
     padding: 0 10px 10px 0;
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 25px 0 10px 0;
+}
+
 .facts ul{
     padding:10px 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .contact-information {
