@@ -17,8 +17,8 @@ body {
     font-size: 3rem;
     font-weight: 100;
     color: white;
-    left: 40%;
-    top: 25%
+    left: 41%;
+    top: 21%
 }
 
 article {
@@ -65,8 +65,9 @@ nav ul li:last-child {
 }
 
 #button {
-    padding: 4px 6px 4px 6px; 
+    padding: 10px 8px 10px 8px; 
     margin: 10px 10px 10px 0px;
+    background-color: rgb(210, 233, 233);
 }
 
 footer {
