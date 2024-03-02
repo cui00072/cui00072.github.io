@@ -18,7 +18,7 @@ body {
     font-weight: 100;
     color: white;
     left: 40%;
-    top: 20%
+    top: 14%
 }
 
 article {
@@ -36,11 +36,6 @@ nav ul li:last-child {
     border-right: none;
 }
 
-section {
-    /* position:relative; */
-    width: 60rem;
-}
-
 .wrapper img {
     width: 200px;
     float: left;
@@ -52,6 +47,29 @@ section {
 }
 
 .contact-information {
-    border: 2px solid black;
+    border: 1.5px solid black;
     padding: 20px 15px;
+}
+
+#yourname,#youremail,#yourmessage {
+    width: 960px;
+    margin: 6px 2px 14px 2px;
+}
+
+#yourmessage {
+    height: 100px;
+}
+
+#yes,#no,#maybe {
+    margin: 20px 5px 0px 0px;
+}
+
+#button {
+    padding: 4px 6px 4px 6px; 
+    margin: 10px 10px 10px 0px;
+}
+
+footer {
+    text-align:end;
+    margin: 10px 30px 50px 0px;
 }
