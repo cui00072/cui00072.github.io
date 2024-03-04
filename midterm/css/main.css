@@ -4,6 +4,7 @@ body {
     margin: 0;
 }
 
+/* overall background color is lighter than body's and overlaid on it */
 .overall {
     background-color: rgb(210, 233, 233);
     z-index: 1;
