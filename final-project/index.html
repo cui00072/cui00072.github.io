@@ -8,27 +8,28 @@
 </head>
 <body>
     <div class="welcomepage">
-        <div class="wrapper1">
-        <div class="topnav">
-            <nav>
-            <!-- use media query for desktop version, and use flex to let li inline -->
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Team</li>
-                    <li>Contact</li>
-                </ul>
-                <!-- search button will be on the right top for web -->
-                <div>
-                    <form action="search.html" method="post">
-                        <input id="search" type="text" name="search" placeholder="Search">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-        </div>
+       
+            <div class="topnav">
+                <nav>
+                    <img src="images/logo.png" alt="Three star logo">
+                <!-- use media query for desktop version, and use flex to let li inline -->
+                    <ul>
+                        <li>Home</li>™
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Team</li>
+                        <li>Contact</li>
+                    </ul>
+                    <!-- search button will be on the right top for web -->
+                    <div>
+                        <form action="index.html" method="post">
+                            <input id="search" type="text" name="search" placeholder="Search">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        
 
         <div class="welcometext">
         <!-- use main banner image for the background for this div-->
@@ -120,21 +121,20 @@
         <div class="contact-sendmessage">
             <h2>Send us a message</h2>
             <div>
-                <label for="fullname">Full Name</label>
-                <br>
-                <input id="fullname" type="text" name="fname">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <br>
-                <input id="email" type="text" name="femail">
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <br>
-                <input id="message" type="text" name="fmessage">
-            </div>
-            <div>
+                <form action="index.html" method="post">
+                    <label for="fullname">Full Name</label>
+                    <br>
+                    <input id="fullname" type="text" name="fname">
+                    
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" type="text" name="femail">
+
+                    <label for="message">Message</label>
+                    <br>
+                    <input id="message" type="text" name="fmessage">
+                </form>                               
+        
                 <button id="sendbutton" type="submit">Send</button>
             </div>
         </div>
