@@ -105,11 +105,13 @@ body {
 }
 
 .section-hero {
+    max-width: 1240px;
     padding: 40px 0;
     background-image: url(/final-project/images/main-banner.jpg);
 }
 
 .hero-container {
+    max-width: 1200px;
     background-color: rgba(2, 2, 2, 0.5);
     color: white;
     padding: 20px;
@@ -121,3 +123,46 @@ h1 {
     line-height: 1.2;
     margin: 40px 0;
 }
+
+p {
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.primary {
+    background-color: #C78C06;
+    border-width: 0;
+    font-size: 30px;
+    padding: 40px ;
+}
+
+.about-us-containter {
+    max-width: 1200px;
+    background-color: #ffe6ac;
+    padding: 20px;
+}
+
+.about-us-containter img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 40px 0;
+}
+
+.services-container {
+    padding: 20px;
+}
+
+.services-container img{
+    width: 100%;
+}
+
+.services-digital-container {
+    padding: 20px;
+    background-color: #ffe6ac;
+}
+
+

@@ -20,8 +20,8 @@
         <!-- use media query for desktop version, and use flex to let li inline -->
         <div class="nav-menu-list">
             <a href="#hero-section">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
+            <a href="#about-section">About Us</a>
+            <a href="#services-section">Services</a>
             <a href="#">Team</a>
             <a href="#">Contact</a>
             <!-- search button will be on the right top for desktop -->
@@ -36,36 +36,43 @@
         <div class="hero-container">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur, asperiores illum dicta ab quas minima ullam nisi, praesentium ut amet voluptas sequi iste! Ratione maxime consequuntur illo reprehenderit repellat!</p>
-            <button class="button primary">Connect with us<i class="fa-solid fa-caret-right"></i></button>
+            <button class="button primary">Connect with us &nbsp<i class="fa-solid fa-caret-right"></i></button>
         </div>
     </section> 
 
-    <div class="aboutus">
-        <img src="images/about-us.jpg" alt="About us">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
-            consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste
-            voluptatem nemo inventore.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
-            consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste
-            voluptatem nemo inventore.</p>
-    </div>
+    <section id="about-section" class="about-us">
+        <div class="about-us-containter">
+            <img src="images/about-us.jpg" alt="About us">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+                consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste
+                voluptatem nemo inventore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
+        </div>
+    </section>
 
-    <div class="ourservices">
-        <!-- this is a container for 5 different services -->
+    <!-- service section will contain 5 services -->
+    <!-- media query for desktop version, will be divided by 6 columns for grid -->
+    <section id="services-section" class="services">
+        <div class="services-container">
+        
+            <h2>Our Services</h2>
 
-        <h1>Our Services</h1>
-        <!-- media query for desktop version, this will be divided by 6 columns for grid -->
-
-        <div class="service-digital">
+            <!-- 1st service -->
             <img src="images/digital.jpg" alt="Digital devices in Cafe">
-            <h2>Digital Transformation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis
-                nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium.
-                Itaque, hic.</p>
-            <button class="button secondary">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+            <div class="services-digital-container">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium Itaque, hic.</p>
+                <button class="button secondary">Digital Plans &nbsp<i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </div>
 
+
+
+
+
+
+         <!-- 2nd service -->
         <div class="service-marketing">
             <img src="images/marketing.jpg" alt="Laptop on the table">
             <h2>Marketing</h2>
