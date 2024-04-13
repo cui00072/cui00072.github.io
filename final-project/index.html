@@ -16,24 +16,24 @@
 </head>
 
 <body>
-    <div class="nav-container">
-        <div class="nav-head">
+    <div class="nav-head">
+        <div class="nav-container">
             <div class="nav-logo">
                 <img src="images/logo.png" alt="Three star logo">
             </div>
-        </div>
-        <!-- use media query for desktop version, and use flex to let li inline -->
-        <div class="nav-menu-list">
-            <a href="#hero-section">Home</a>
-            <a href="#about-section">About Us</a>
-            <a href="#services-section">Services</a>
-            <a href="#our-team-section">Team</a>
-            <a href="#contact-us-section">Contact</a>
-            <!-- search button will be on the right top for desktop -->
-            <form class="nav-form" action="index.html" method="post">
-                <input class="search-field" type="text" name="search" placeholder="Search">
-                <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <!-- use media query for desktop version, and use flex to let li inline -->
+            <div class="nav-menu-list">
+                <a href="#hero-section">Home</a>
+                <a href="#about-section">About Us</a>
+                <a href="#services-section">Services</a>
+                <a href="#our-team-section">Team</a>
+                <a href="#contact-us-section">Contact</a>
+                <!-- search button will be on the right top for desktop -->
+                <form class="nav-form" action="index.html" method="post">
+                    <input class="search-field" type="text" name="search" placeholder="Search">
+                    <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -50,9 +50,15 @@
     <section id="about-section" class="section-about-us">
         <div class="about-us-containter">
             <img src="images/about-us.jpg" alt="About us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
+            <div class="about-us-content-wrapper">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+                    consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat
+                    iste voluptatem nemo inventore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+                    consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat
+                    iste voluptatem nemo inventore.</p>
+            </div>
         </div>
     </section>
 
@@ -64,59 +70,71 @@
         <div class="services-container">
 
             <h2>Our Services</h2>
-
-            <!-- 1st service -->
-            <div class="services-digital-container">
-                <img src="images/digital.jpg" alt="Digital devices in Cafe">
-                <div class="services-digital-text-container">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium Itaque, hic.</p>
-                    <button class="button secondary">Digital Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+            <div class="services-content-wrapper">
+                <!-- 1st service -->
+                <div class="services-digital-container">
+                    <img src="images/digital.jpg" alt="Digital devices in Cafe">
+                    <div class="services-digital-text-container">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non
+                            perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque
+                            dicta laudantium Itaque, hic.</p>
+                        <button class="button secondary">Digital Plans &nbsp;<i
+                                class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <br>
+                <br>
 
-            <!-- 2nd service -->
-            <div class="services-marketing-container">
-                <img src="images/marketing.jpg" alt="Laptop on the table">
-                <div class="services-marketing-text-container">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium Itaque hic.</p>
-                    <button class="button secondary">Marketing Plans &nbsp;<i
-                            class="fa-solid fa-caret-right"></i></button>
+                <!-- 2nd service -->
+                <div class="services-marketing-container">
+                    <img src="images/marketing.jpg" alt="Laptop on the table">
+                    <div class="services-marketing-text-container">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non
+                            perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque
+                            dicta laudantium Itaque hic.</p>
+                        <button class="button secondary">Marketing Plans &nbsp;<i
+                                class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <br>
+                <br>
 
-            <!-- 3rd service -->
-            <div class="services-video-container">
-                <img src="images/video.jpg" alt="Youtube page on cell phone">
-                <div class="services-video-text-container">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium Itaque hic.</p>
-                    <button class="button secondary">Video Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                <!-- 3rd service -->
+                <div class="services-video-container">
+                    <img src="images/video.jpg" alt="Youtube page on cell phone">
+                    <div class="services-video-text-container">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non
+                            perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque
+                            dicta laudantium Itaque hic.</p>
+                        <button class="button secondary">Video Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <br>
+                <br>
 
-            <!-- 4th service -->
-            <div class="services-web-container">
-                <img src="images/web.jpg" alt="Web opened from cell phone">
-                <div class="services-web-text-container">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto sapiente possimus consequuntur porro earum, vel aut culpa. Numquam laborum perspiciatis laboriosam architecto? Molestias iste, ea dolor vitae obcaecati sed?</p>
-                    <button class="button secondary">Web Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                <!-- 4th service -->
+                <div class="services-web-container">
+                    <img src="images/web.jpg" alt="Web opened from cell phone">
+                    <div class="services-web-text-container">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto sapiente possimus
+                            consequuntur porro earum, vel aut culpa. Numquam laborum perspiciatis laboriosam architecto?
+                            Molestias iste, ea dolor vitae obcaecati sed?</p>
+                        <button class="button secondary">Web Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <br>
+                <br>
 
-            <!-- 5th service -->
-            <div class="services-print-container">
-                <img src="images/print.jpg" alt="Colorful mailboxes">
-                <div class="services-print-text-container">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto sapiente possimus consequuntur porro earum, vel aut culpa. Numquam laborum perspiciatis laboriosam architecto? Molestias iste, ea dolor vitae obcaecati sed?</p>
-                    <button class="button secondary">Print Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                <!-- 5th service -->
+                <div class="services-print-container">
+                    <img src="images/print.jpg" alt="Colorful mailboxes">
+                    <div class="services-print-text-container">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto sapiente possimus
+                            consequuntur porro earum, vel aut culpa. Numquam laborum perspiciatis laboriosam architecto?
+                            Molestias iste, ea dolor vitae obcaecati sed?</p>
+                        <button class="button secondary">Print Plans &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
             </div>
             <br>
@@ -126,22 +144,29 @@
 
     <!-- end of services section  -->
 
-    <div class="vision-container">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
-        <button class="button tertiary">Learn More &nbsp;<i class="fa-solid fa-caret-right"></i></button>
-    </div>
+    <section class="section-vision">
+        <div class="vison-container">
+            <h3>Our Vision</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+                consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat
+                iste voluptatem nemo inventore.</p>
+            <button class="button tertiary">Learn More &nbsp;<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </section>
 
     <!-- start of our team section -->
 
     <section id="our-team-section" class="section-our-team">
-        <h2>Our Team</h2>
+        <div class="our-team-comtainer">
+            <h2>Our Team</h2>
             <div class="jd-ceo-container">
                 <img src="images/john.jpg" alt="John Doe's image">
                 <div class="jd-ceo-text-container">
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis esse odit corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis eveniet, molestias quisquam corrupti ad.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis
+                        esse odit corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis
+                        eveniet, molestias quisquam corrupti ad.</p>
                 </div>
             </div>
             <br>
@@ -151,67 +176,71 @@
                 <div class="br-cfo-text-container">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laudantium nihil quam corporis dignissimos pariatur, dolor nobis amet, fuga, magni ex nostrum vero? Distinctio saepe provident minima recusandae architecto mollitia?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laudantium nihil quam
+                        corporis dignissimos pariatur, dolor nobis amet, fuga, magni ex nostrum vero? Distinctio saepe
+                        provident minima recusandae architecto mollitia?</p>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- end of our team section -->
 
     <!-- start of contact us section -->
-    
+
     <section id="contact-us-section" class="section-contact-us">
-        
-        <h2>Contact Us</h2>
+        <div class="contact-us-container">
 
-        <div class="send-message-container">
-            <h3>Send us a message</h3>
-            <form action="index.html" method="post">
-                <label for="fullname">Full Name</label>
-                <br>
-                <input id="fullname" type="text" name="fname">
-                <br>
-                <label for="email">Email</label>
-                <br>
-                <input id="email" type="text" name="femail">
-                <br>
-                <label for="message">Message</label>
-                <br>
-                <input id="message" type="text" name="fmessage">
-            </form>
-            <button id="send-button" type="submit">Send</button>
+            <h2>Contact Us</h2>
+
+            <div class="send-message-container">
+                <h3>Send us a message</h3>
+                <form action="index.html" method="post">
+                    <label for="fullname">Full Name</label>
+                    <br>
+                    <input id="fullname" type="text" name="fname">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" type="text" name="femail">
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <input id="message" type="text" name="fmessage">
+                </form>
+                <button id="send-button" type="submit">Send</button>
+            </div>
+
+            <div class="hours-container">
+                <h3>Hours of operation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="location-container">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156963!2d-75.75943181114503!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556602295!5m2!1sen!2sca"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-
-        <div class="hours-container">
-            <h3>Hours of operation</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="location-container">
-            <h3>Location</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156963!2d-75.75943181114503!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556602295!5m2!1sen!2sca"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
     </section>
     <!-- end of contact us section -->
 
@@ -222,4 +251,5 @@
     </footer>
 
 </body>
+
 </html>

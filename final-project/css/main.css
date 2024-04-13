@@ -23,24 +23,30 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -48,9 +54,9 @@ a {
 
 /* this is end of reset CSS */
 
+/* mobile size */
 body {
     font-family: "Open Sans", sans-serif;
-    max-width: 1200px;
 }
 
 h1 {
@@ -109,9 +115,13 @@ p {
     padding: 40px;
 }
 
-.nav-container {
-    background-color: #222;
+.nav-container,.hero-container,.about-us-containter,.services-container,.vision-container,.section-our-team,.section-contact-us,footer {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-head {
+    background-color: #222;
     padding: 15px;
 }
 
@@ -166,12 +176,12 @@ p {
 }
 
 .hero-container {
-    background-color: rgba(2, 2, 2, 0.5);
+    background-color: rgba(2, 2, 2, 0.75);
     color: white;
     padding: 15px;
 }
 
-.about-us-containter {
+.section-about-us {
     background-color: #ffe6ac;
     padding: 15px;
 }
@@ -228,13 +238,13 @@ p {
     padding: 40px 20px 20px 20px;
 }
 
-.vision-container {
+.section-vision {
     padding: 40px 20px;
     background-image: url(/final-project/images/vision.jpg);
 }
 
-.vision-container h3,
-.vision-container p {
+.section-vision h3,
+.section-vision p {
     color: white;
 }
 
@@ -312,3 +322,125 @@ footer {
     padding: 40px 20px 20px 20px;
     line-height: 1.5;
 }
+
+/* desktop size */
+ @media screen and (min-width: 760px) {
+
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 40px 0;
+    }
+    
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 40px 0;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    
+    h4 {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 10px 0;
+        border-bottom: 3px solid #C78C06;
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 20px 0;    
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .nav-logo {
+        background-color: transparent;
+    }
+
+    .nav-menu-list {
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+    } 
+
+    .nav-menu-list a {
+        padding: 30px;
+        text-align: center;
+        white-space: nowrap;
+    } 
+
+    .nav-form {
+        height: 40px;
+        
+    }
+
+    .search-field {
+        width: 200px;
+    }
+
+    .about-us-containter {
+        display: flex;
+    }
+
+    .about-us-containter img {
+        height: 300px;
+        width: 50%;
+        float: left;
+    }
+
+    .about-us-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .about-us-content-wrapper h2 {
+        margin: 20px 0;
+    }
+
+    .about-us-content-wrapper p {
+        margin: 10px 0;
+    }
+
+    .services-content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "s1 s1 s1 s2 s2 s2"
+        "s3 s3 s4 s4 s5 s5"
+    }
+
+    .services-digital-container {
+        grid-area: s1;
+    }
+
+    .services-marketing-container {
+        grid-area: s2;
+    }
+
+    .services-video-container {
+        grid-area: s3;
+    }
+
+    .services-web-container {
+        grid-area: s4;
+    }
+
+    .services-print-container {
+        grid-area: s5;
+    }
+
+
+
+ }
