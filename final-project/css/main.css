@@ -1,4 +1,3 @@
-/* this is to reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -263,4 +262,53 @@ p {
     padding: 40px 20px 20px 20px;
 }
 
+.section-contact-us {
+    padding: 40px 20px;
+}
 
+.send-message-container input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-color: #222;
+    border-width: 1.5px;
+}
+
+#message {
+    height: 100px;
+}
+
+#send-button {
+    color:#C78C06;
+    font-size: 20px;
+    background-color: #222;
+    border-width: 0;
+    padding: 6px 10px;
+}
+
+table {
+    width: 100%;
+    border: 1.5px solid #222;
+}
+
+th, td {
+    border: 1.5px solid #222; 
+    padding: 20px;
+    width: 50%;
+}
+
+thead {
+    text-align: center;
+    background-color: #ffe6ac;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #C78C06;
+    padding: 40px 20px 20px 20px;
+    line-height: 1.5;
+}
