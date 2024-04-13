@@ -42,34 +42,82 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-/* this is end of to reset CSS */
+/* this is end of reset CSS */
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.welcomepage {
-    background-color: #212121;
-}
-
-.wrapper-overall {
+.nav-container {
+    background-color: #222;
     max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
 }
 
-.wrapper-logo {
-    background-color: #C78B06;
+.nav-logo {
+    background-color: #C78C06;
+    padding: 20px 0;
 }
 
-.topnav ul {
+.nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #C78C06;
+}
+
+.nav-menu-list a {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 20px;
     text-align: center;
-    list-style-type: none;
-    color: #C78B06;
 }
 
-.topnav ul :nth-child(1) {
-    color: #212121;
-    background-color: #C78B06;
+.nav-menu-list a:active {
+    background-color: #C78C06;
+    color: #222;
 }
 
+.nav-form {
+    width: 100%;
+    display: flex;
+}
+
+.search-field {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.search-button {
+    background-color: transparent;
+    border-width: 1.5px;
+    border-color: #C78C06;
+    font-size: 20px;
+    color: #C78C06;
+    padding: 0 10px;
+}
+
+.section-hero {
+    padding: 40px 0;
+    background-image: url(/final-project/images/main-banner.jpg);
+}
+
+.hero-container {
+    background-color: rgba(2, 2, 2, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 40px 0;
+}

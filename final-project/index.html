@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cui00072 Final Project</title>
+    <script src="https://kit.fontawesome.com/a74edbdc02.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div class="welcomepage">
-        <div class="wrapper-overall">
-            <div class="wrapper-logo">
+    <div class="nav-container">
+        <div class="nav-head">
+            <div class="nav-logo">
                 <img src="images/logo.png" alt="Three star logo">
             </div>
-            <div class="topnav">
-                <nav> 
-                    <!-- use media query for desktop version, and use flex to let li inline -->
-                    <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Team</li>
-                        <li>Contact</li>
-                    </ul>
-                    <!-- search button will be on the right top for web -->
-                        <form action="index.html" method="post">
-                            <input id="search" type="text" name="search" placeholder="Search">
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                </nav>
-            </div>
         </div>
-         
-   
-        
-
-        <div class="welcometext">
-        <!-- use main banner image for the background for this div-->
-            <img src="images/main-banner.jpg" alt="Office room area">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, qui. Odio nihil error veniam aperiam ipsam ut dicta asperiores eligendi, optio, ex voluptas atque repudiandae perferendis quibusdam autem, fugit dignissimos?</p>
-            <button class="button primary">Connect with us<i class="fa-solid fa-caret-right"></i></button>
+        <!-- use media query for desktop version, and use flex to let li inline -->
+        <div class="nav-menu-list">
+            <a href="#hero-section">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+            <!-- search button will be on the right top for desktop -->
+            <form class="nav-form" action="index.html" method="post">
+                <input class="search-field" type="text" name="search" placeholder="Search">
+                <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
     </div>
+
+    <section id="hero-section" class="section-hero">
+        <div class="hero-container">
+            <h1>Welcome to Three Star Media</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, consectetur, asperiores illum dicta ab quas minima ullam nisi, praesentium ut amet voluptas sequi iste! Ratione maxime consequuntur illo reprehenderit repellat!</p>
+            <button class="button primary">Connect with us<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </section> 
 
     <div class="aboutus">
         <img src="images/about-us.jpg" alt="About us">
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste voluptatem nemo inventore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+            consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste
+            voluptatem nemo inventore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, reiciendis id? Ipsum blanditiis enim
+            consequatur illo aut quisquam, voluptatum nulla, nostrum esse error dignissimos necessitatibus fugiat iste
+            voluptatem nemo inventore.</p>
     </div>
 
     <div class="ourservices">
-    <!-- this is a container for 5 different services -->
+        <!-- this is a container for 5 different services -->
 
         <h1>Our Services</h1>
         <!-- media query for desktop version, this will be divided by 6 columns for grid -->
@@ -61,45 +60,57 @@
         <div class="service-digital">
             <img src="images/digital.jpg" alt="Digital devices in Cafe">
             <h2>Digital Transformation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium. Itaque, hic.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam odio vitae libero non perferendis
+                nulla omnis provident! Praesentium fugiat quaerat numquam esse adipisci, error neque dicta laudantium.
+                Itaque, hic.</p>
             <button class="button secondary">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
-    
+
         <div class="service-marketing">
             <img src="images/marketing.jpg" alt="Laptop on the table">
             <h2>Marketing</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quibusdam officia doloremque repellendus, asperiores ullam, magnam dolorum sapiente deleniti ab natus odit nam, quasi corporis laborum. Unde, rem. Magni, distinctio!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quibusdam officia doloremque
+                repellendus, asperiores ullam, magnam dolorum sapiente deleniti ab natus odit nam, quasi corporis
+                laborum. Unde, rem. Magni, distinctio!</p>
             <button class="button secondary">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
 
         <div class="service-videioproduction">
             <img src="images/video.jpg" alt="Youtube page on cell phone">
             <h2>Video Production</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus recusandae. Nobis, placeat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores
+                deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus
+                recusandae. Nobis, placeat.</p>
             <button class="button secondary">Video Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
-    
+
         <div class="service-webdev">
             <img src="images/web.jpg" alt="Web opened from cell phone">
             <h2>Web Development</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus recusandae. Nobis, placeat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores
+                deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus
+                recusandae. Nobis, placeat.</p>
             <button class="button secondary">Web Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
 
         <div class="service-print">
             <img src="images/print.jpg" alt="Colorful mailboxes">
             <h2>Print</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus recusandae. Nobis, placeat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia possimus praesentium similique dolores
+                deleniti earum non dolore distinctio quae eligendi esse nam perspiciatis laborum, et minus doloribus
+                recusandae. Nobis, placeat.</p>
             <button class="button secondary">Print Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
     </div>
     <!-- this is the end of ourservice container  -->
 
     <div class="ourvision">
-         <!-- vision image will be using for the background in this section, will adjust in css -->
+        <!-- vision image will be using for the background in this section, will adjust in css -->
         <img src="images/vision.jpg" alt="Paper ships">
         <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis esse odit corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis eveniet, molestias quisquam corrupti ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis esse odit
+            corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis eveniet, molestias quisquam
+            corrupti ad.</p>
         <button class="button secondary">Learn More<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
@@ -110,17 +121,21 @@
         <h2>John Doe</h2>
         <h3>CEO and Co-owner</h3>
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis esse odit corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis eveniet, molestias quisquam corrupti ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil totam nostrum ipsam quis esse odit
+            corporis deserunt pariatur. Voluptates dignissimos sint labore minus reiciendis eveniet, molestias quisquam
+            corrupti ad.</p>
         <br>
         <img src="images/bob.jpg" alt="Bob Rite's image">
         <h2>Bob Rite</h2>
         <h3>CFO and Co-owner</h3>
         <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis similique commodi maiores animi, voluptas voluptates nulla ea. Sit non quas ipsam, voluptatum repudiandae adipisci explicabo accusamus in! Minus, ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis similique commodi maiores animi,
+            voluptas voluptates nulla ea. Sit non quas ipsam, voluptatum repudiandae adipisci explicabo accusamus in!
+            Minus, ipsam.</p>
     </div>
 
     <div class="contactus">
-    <!-- this is a container of 3 different divs -->
+        <!-- this is a container of 3 different divs -->
         <h1>Contact Us</h1>
 
         <div class="contact-sendmessage">
@@ -130,7 +145,7 @@
                     <label for="fullname">Full Name</label>
                     <br>
                     <input id="fullname" type="text" name="fname">
-                    
+
                     <label for="email">Email</label>
                     <br>
                     <input id="email" type="text" name="femail">
@@ -138,8 +153,8 @@
                     <label for="message">Message</label>
                     <br>
                     <input id="message" type="text" name="fmessage">
-                </form>                               
-        
+                </form>
+
                 <button id="sendbutton" type="submit">Send</button>
             </div>
         </div>
@@ -165,11 +180,14 @@
                 </tbody>
             </table>
         </div>
-        
+
         <div class="contact-location">
             <!-- media query for desktop version, location will be on the right of send us a message  -->
             <h2>Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156963!2d-75.75943181114503!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556602295!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156963!2d-75.75943181114503!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556602295!5m2!1sen!2sca"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
@@ -180,4 +198,5 @@
     </footer>
 
 </body>
+
 </html>
