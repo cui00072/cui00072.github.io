@@ -50,13 +50,70 @@ a {
 /* this is end of reset CSS */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 3px solid #C78C06;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.primary {
+    background-color: #C78C06;
+    border-width: 0;
+    font-size: 30px;
+    padding: 40px ;
+}
+
+.secondary {
+    background-color: #222;
+    color: white;
+    border-width: 0;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.tertiary{
+    background-color: rgba(2, 2, 2, 0.5);
+    color: white;
+    border-color: #C78C06;
+    border-width: 1.5px;
+    font-size: 30px;
+    padding: 40px;
 }
 
 .nav-container {
     background-color: #222;
     max-width: 1200px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .nav-logo {
@@ -105,64 +162,105 @@ body {
 }
 
 .section-hero {
-    max-width: 1240px;
     padding: 40px 0;
     background-image: url(/final-project/images/main-banner.jpg);
 }
 
 .hero-container {
-    max-width: 1200px;
     background-color: rgba(2, 2, 2, 0.5);
     color: white;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 80px;
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 40px 0;
-}
-
-p {
-    line-height: 1.5;
-    margin: 20px 0;
-}
-
-.primary {
-    background-color: #C78C06;
-    border-width: 0;
-    font-size: 30px;
-    padding: 40px ;
+    padding: 15px;
 }
 
 .about-us-containter {
-    max-width: 1200px;
     background-color: #ffe6ac;
-    padding: 20px;
+    padding: 15px;
 }
 
 .about-us-containter img {
     width: 100%;
 }
 
-h2 {
-    font-size: 50px;
-    font-weight: 800;
-    margin: 40px 0;
-}
-
 .services-container {
-    padding: 20px;
+    padding: 15px;
 }
 
 .services-container img{
     width: 100%;
 }
 
-.services-digital-container {
-    padding: 20px;
+.services-digital-container{
     background-color: #ffe6ac;
+}
+
+.services-digital-text-container {
+    padding: 40px 20px 20px 20px;
+}
+
+.services-marketing-container{
+    background-color: #ffe6ac;
+}
+
+.services-marketing-text-container{
+    padding: 40px 20px 20px 20px;
+}
+
+.services-video-container{
+    background-color: #ffe6ac;
+}
+
+.services-video-text-container{
+    padding: 40px 20px 20px 20px;
+}
+
+.services-web-container{
+    background-color: #ffe6ac;
+}
+
+.services-web-text-container{
+    padding: 40px 20px 20px 20px;
+}
+
+.services-print-container{
+    background-color: #ffe6ac;
+}
+
+.services-print-text-container{
+    padding: 40px 20px 20px 20px;
+}
+
+.vision-container {
+    padding: 40px 20px;
+    background-image: url(/final-project/images/vision.jpg);
+}
+
+.vision-container h3,
+.vision-container p {
+    color: white;
+}
+
+.section-our-team {
+    padding: 40px 20px;
+}
+
+.section-our-team img{
+    width: 100%;
+}
+
+.jd-ceo-container {
+    background-color: #ffe6ac;
+}
+
+.jd-ceo-text-container {
+    padding: 40px 20px 20px 20px;
+}
+
+.br-cfo-container {
+    background-color: #ffe6ac;
+}
+
+.br-cfo-text-container {
+    padding: 40px 20px 20px 20px;
 }
 
 
