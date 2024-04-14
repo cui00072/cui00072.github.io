@@ -496,7 +496,7 @@ footer {
         grid-template-areas: 
         "c1 c3"
         "c2 c2";
-        gap: 60px 20px;
+        gap: 40px 20px;
     }
 
     .send-message-container {
