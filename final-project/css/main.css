@@ -11,7 +11,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0 auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -115,7 +114,7 @@ p {
     padding: 40px;
 }
 
-.nav-container,.hero-container,.about-us-containter,.services-container,.vision-container,.section-our-team,.section-contact-us,footer {
+.nav-container,.hero-container,.about-us-containter,.services-container,.vision-container,.section-our-team,.section-contact-us,.footer-content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -340,13 +339,13 @@ footer {
     }
     
     h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         margin: 20px 0;
     }
     
     h4 {
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 700;
         padding: 10px 0;
         border-bottom: 3px solid #C78C06;
@@ -365,15 +364,18 @@ footer {
 
     .nav-logo {
         background-color: transparent;
+        margin: 0;
     }
 
     .nav-menu-list {
         flex-direction: row;
-        margin: auto;
+        margin: 0;
+        padding: 0;
         align-items: center;
     } 
 
     .nav-menu-list a {
+        margin-right: 10px;
         padding: 30px;
         text-align: center;
         white-space: nowrap;
@@ -381,11 +383,12 @@ footer {
 
     .nav-form {
         height: 40px;
-        
+        min-width: 100px;
     }
 
     .search-field {
         width: 200px;
+        flex: 1;
     }
 
     .about-us-containter {
@@ -418,7 +421,9 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "s1 s1 s1 s2 s2 s2"
-        "s3 s3 s4 s4 s5 s5"
+        "s3 s3 s4 s4 s5 s5";
+        grid-column-gap: 10px; 
+        grid-row-gap: 10px; 
     }
 
     .services-digital-container {
@@ -441,6 +446,64 @@ footer {
         grid-area: s5;
     }
 
+    .secondary {
+        width: -webkit-fill-available;
+    }
 
+    .jd-ceo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "t1 t2";
+    }
 
+    .jd-ceo-container img {
+        grid-area: t1;
+    }
+
+    .jd-ceo-text-container {
+        grid-area: t2;
+    }
+
+    .br-cfo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "t4 t3";
+    }
+
+    .br-cfo-container img{
+        grid-area: t3;
+    }
+
+    .br-cfo-text-container {
+        grid-area: t4;
+    } 
+
+    .our-team-comtainer br {
+        display: none;
+    }
+
+    .contact-us-content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "c1 c3"
+        "c2 c2";
+        gap: 60px 20px;
+    }
+
+    .send-message-container {
+        grid-area: c1;
+    }
+
+    .hours-container {
+        grid-area: c2;
+    }
+
+    .location-container {
+        grid-area: c3;
+    }
+    
  }
